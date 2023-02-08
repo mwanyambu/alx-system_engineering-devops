@@ -6,3 +6,4 @@
 6-firstdirectory creates a directory named my_first_directory inside tmp
 7-movethatfile moves the file betty to my_first_directory inside /tmp
 9-firstdirdeletion deletes the directory my_first_directory
+10-back this script changes the working directory to the previous one
