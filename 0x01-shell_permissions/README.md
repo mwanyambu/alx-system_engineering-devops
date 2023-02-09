@@ -3,3 +3,4 @@
 2-groups displays all the groups the current user is in
 3-new_owner changes the file owership to a new owner
 4-empty creates an empty file
+5-execute adds execute permission to file
