@@ -1,2 +1,2 @@
 #!/bin/bash
-if [owner = guillaume] then chown betty hello f1
+chown --from=guillaume betty hello
