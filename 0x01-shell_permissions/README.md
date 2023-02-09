@@ -8,3 +8,4 @@
 7-everybody adds execution permission to the owner, the group owner and the other users 
 8-James_Bond adds all permissions only to other
 9-John_Doe allows full permissions only to owner
+10-mirror_permissions copies file permissions to another
