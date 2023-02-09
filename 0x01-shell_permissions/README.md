@@ -7,3 +7,4 @@
 6-multiple_permissions gives multiple permissions to file
 7-everybody adds execution permission to the owner, the group owner and the other users 
 8-James_Bond adds all permissions only to other
+9-John_Doe allows full permissions only to owner
