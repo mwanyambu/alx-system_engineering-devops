@@ -2,3 +2,4 @@
 1-confused_smiley displays a confused smiley
 2-hellofile displays contents of the file
 3-twofiles concatnates two files
+4-lastlines prints last 10 lines
