@@ -4,3 +4,4 @@
 3-twofiles concatnates two files
 4-lastlines prints last 10 lines
 5-firstlines displays first 10 lines of passwd
+6-third_line prints the third line
