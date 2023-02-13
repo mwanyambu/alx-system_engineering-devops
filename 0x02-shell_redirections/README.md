@@ -9,3 +9,4 @@
 e-cwd_state redirects list all command
 9-duplicate_last_line duplicates last line
 deletes all except js files
+11-directories counts the number of directories within
