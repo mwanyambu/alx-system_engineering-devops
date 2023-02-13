@@ -7,3 +7,4 @@
 6-third_line prints the third line
 7-file creates new file
 e-cwd_state redirects list all command
+9-duplicate_last_line duplicates last line
