@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+#displays contents of the current directory in a list format
+
+for i in *
+
+do
+	if [[ $i != .* ]]
+	then
+		echo "$i" | cut -d'-' -f2-
+	fi
+done
