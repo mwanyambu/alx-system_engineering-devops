@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-
 #displays "FizzBuzz" when number is a multiple of 3 and 5
 #displays "Fizz" when number is multiple of 3
 #displays "Buzz" when number is multiple of 5
 #display the above in a list format
-
 for num in {1..100}
 do
 	if ((num % 3 == 0 && num % 5 == 0))

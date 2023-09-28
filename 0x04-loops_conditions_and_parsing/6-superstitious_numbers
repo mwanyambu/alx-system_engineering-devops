@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
-
 #This script displays numbers 1 to 20
 #displays 4 and the "bad luck from china" for the 4th iteration
 #displays 9 and then "bad luck from japan" for the the 9th loop iteration
 #displays 17 and then "bad luck from italy"for the 17th loop iteration
-
 nums=1
-
 while [ $nums -le 20 ]
-
 do
 	case $nums in
 		4)
