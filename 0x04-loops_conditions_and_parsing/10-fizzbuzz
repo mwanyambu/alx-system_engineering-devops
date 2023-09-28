@@ -5,9 +5,9 @@
 #displays "Buzz" when number is multiple of 5
 #display the above in a list format
 
-for ((num = 1; num <= 100; num++))
+for num in {1..100}
 do
-	if ((num % 3 == 0)) && ((num % 5 == 0))
+	if ((num % 3 == 0 && num % 5 == 0))
 	then
 		echo "FizzBuzz"
 	elif ((num % 3 == 0))
