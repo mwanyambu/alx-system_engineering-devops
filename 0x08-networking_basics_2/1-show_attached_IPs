@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #display ip addresses
-ifconfig | grep 'inet' | awk '{print $2}
+
+ifconfig | grep 'inet' | awk '{print $2}'
