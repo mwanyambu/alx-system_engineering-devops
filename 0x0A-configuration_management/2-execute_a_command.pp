@@ -1,6 +1,5 @@
 # a manifest that kills a process
-exec { 'kill_killmenow':
-  command     => 'pkill -f killmenow',
-  refreshonly => true,
-  onlyif      => 'pgrep -f killmenow',
+exec { 'pkill':
+  command  => 'pkill -f killmenow',
+  privider => 'shell',
 }
