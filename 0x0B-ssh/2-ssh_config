@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# cofiguration file for ssh witout pwd authentication
+Host *
+	Hostname 52.205.85.168
+	User ubuntu
+	PasswordAuthentication no
+	IdentifyFile ~/.ssh/school
