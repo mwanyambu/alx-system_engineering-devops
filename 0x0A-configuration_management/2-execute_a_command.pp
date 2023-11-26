@@ -1,5 +1,5 @@
 # a manifest that kills a process
-exec { 'pkill':
-  command  => 'pkill -f killmenow',
-  privider => 'shell',
+exec { 'killmenow':
+  command  => 'pkill killmenow',
+  path     => '/usr/bin/',
 }
