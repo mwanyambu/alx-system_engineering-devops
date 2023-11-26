@@ -8,7 +8,7 @@ file_line { 'turning off passw':
   replace => true,
 }
 
-file_line { 'Identity file':
+file_line { 'Declare identity file':
   ensure  => present,
   path    => '/etc/ssh/ssh_config',
   line    => '     IdentifyFile ~/.ssh/school',
