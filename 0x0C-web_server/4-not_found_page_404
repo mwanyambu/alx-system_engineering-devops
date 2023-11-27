@@ -26,9 +26,9 @@ SERVER_CONFIG=\
 	}
 }"
 echo "Ceci n'est pas une page" > /var/www/html/404.html
-echo '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default
+echo "$SERVER_CONFIG" > /etc/nginx/sites-enabled/default
 
-if [ "$(pgrep -c nginx)"-le 0 ];
+if [ "$(pgrep -c nginx)" -le 0 ];
 then
 	service nginx start
 else
