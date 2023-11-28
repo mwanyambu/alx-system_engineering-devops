@@ -3,27 +3,28 @@
 
 sudo apt-get update
 sudo apt-get install nginx -y
+sudo ufw allow 'Nginx HTTP'
+sudo echo "Hello, World!"| sudo tee /var/www/html/index.html
+sudo service nginx restart
+#if [ -x /usr/sbin/nginx ]; then
+#	sudo rm /etc/nginx/sites-available/default
+#	sudo rm /etc/nginx/sites-enabled/default
 
-if [ -x /usr/sbin/nginx ]; then
-	sudo rm /etc/nginx/sites-available/default
-	sudo rm /etc/nginx/sites-enabled/default
-
-	sudo touch /etc/nginx/sites-available/default
-	echo "server {
-	    listen 80;
-	    root /var/www/html;
-	    index index.html;
-
-	    location / {
-	        add_header Content-Type text/html;
-		echo 'Hello World!';
+#	sudo touch /etc/nginx/sites-available/default
+#	echo "server {
+#	    listen 80;
+#	    root /var/www/html;
+#	    index index.html;
+#
+#	    location / {
+#	        add_header Content-Type text/html;
+#		echo 'Hello World!';
 	    }
-    	}" | sudo tee /etc/nginx/sites-available/default
-	
-	sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+#   	}" | sudo tee /etc/nginx/sites-available/default	
+#	sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 
-	sudo nginx -t
-	sudo service nginx reload
-else
-	echo "nginx installation failed."
-fi
+#	sudo nginx -t
+#	sudo service nginx reload
+#else
+#	echo "nginx installation failed."
+#fi
