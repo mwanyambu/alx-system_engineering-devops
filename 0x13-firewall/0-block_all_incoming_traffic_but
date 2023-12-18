@@ -1,6 +1,13 @@
+#update packages
 sudo apt-get update
+
+#install ufw
 sudo apt-get install ufw
+
+#allow ports 22, 443, 80
 sudo ufw allow 22/tcp
 sudo ufw allow 443/tcp
 sudo ufw allow port 80/tcp
+
+#enable ufw
 sudo ufw enable
