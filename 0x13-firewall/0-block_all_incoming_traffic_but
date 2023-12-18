@@ -1,11 +1,4 @@
-#allow port 22
 sudo ufw allow 22/tcp
-
-#allow port 443
 sudo ufw allow 443/tcp
-
-#allow port 80
 sudo ufw allow port 80/tcp
-
-#enable ufw
 sudo ufw enable
