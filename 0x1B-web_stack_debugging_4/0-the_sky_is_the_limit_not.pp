@@ -1,8 +1,10 @@
 #configure web server to work under pressure
-exec { '/usr/bin/env sed -i s/15/1000/ etc/default/nginx':
-  command => '/usr/bin/env sed -i s/15/1000/ etc/default/nginx',
+exec {'update_nginx':
+  command => '/bin/sed -i "s/15/4096/" etc/default/nginx',
+  path    => 'usr/local/bin/:/bin/',
 }
-exec { '/usr/bin/env service nginx restart':
-  command => '/usr/bin/env service nginx restart',
-  require => Exec['/usr/bin/env sed -i s/15/1000/ etc/default/nginx'],
+
+exec { 'nginx_restart':
+  command => '/etc/init.d/nginx restart',
+  path    => '/etc/init.d/'
 }
